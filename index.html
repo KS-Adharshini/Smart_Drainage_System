@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Drainage System - Dashboard</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Mobile Menu Toggle Button -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h1>
+                <div class="logo-icon">
+                    <i class="fas fa-tint"></i>
+                </div>
+                Smart Drainage
+            </h1>
+        </div>
+        
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#home" class="nav-link active" data-section="home">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#notifications" class="nav-link" data-section="notifications">
+                    <i class="fas fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#maintenance" class="nav-link" data-section="maintenance">
+                    <i class="fas fa-tools"></i>
+                    Maintenance Schedule
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#climate" class="nav-link" data-section="climate" id="climateToggle">
+                    <i class="fas fa-cloud-sun"></i>
+                    Climate
+                    <i class="fas fa-chevron-down" style="margin-left: auto; transition: transform 0.3s ease;" id="climateChevron"></i>
+                </a>
+                <ul class="climate-submenu" id="climateSubmenu">
+                    <li class="nav-item">
+                        <a href="#weather" class="nav-link" data-section="weather">
+                            <i class="fas fa-sun"></i>
+                            Weather Forecast
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#rainfall" class="nav-link" data-section="rainfall">
+                            <i class="fas fa-cloud-rain"></i>
+                            Rainfall Prediction
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#flood-risk" class="nav-link" data-section="flood-risk">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            Flood Risk Assessment
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#data" class="nav-link" data-section="data">
+                    <i class="fas fa-chart-bar"></i>
+                    Data
+                </a>
+            </li>
+        </ul>
+
+        <!-- Mobile Authentication Buttons -->
+        <div class="mobile-auth">
+            <a href="#" class="auth-button" id="loginBtn">
+                <i class="fas fa-sign-in-alt"></i>
+                Login
+            </a>
+            <a href="#" class="auth-button logout" id="logoutBtn">
+                <i class="fas fa-sign-out-alt"></i>
+                Logout
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section fade-in">
+            <div class="section-header">
+                <h1 class="section-title">Welcome to Smart Drainage System</h1>
+                <p class="section-subtitle">Monitor and manage your drainage infrastructure with real-time data and intelligent insights.</p>
+            </div>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3 class="card-title">System Overview</h3>
+                    <p class="card-description">Get a comprehensive view of your entire drainage network status, including active sensors and system health.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="card-title">Real-time Analytics</h3>
+                    <p class="card-description">Monitor water levels, flow rates, and system performance with live data visualization and trend analysis.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="card-title">Alert Management</h3>
+                    <p class="card-description">Receive instant notifications for critical events, maintenance needs, and potential flood risks.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notifications Section -->
+        <section id="notifications" class="section fade-in">
+            <div class="section-header">
+                <h1 class="section-title">Notifications</h1>
+                <p class="section-subtitle">Stay informed with real-time alerts and system notifications.</p>
+            </div>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-exclamation-circle" style="color: #f59e0b;"></i>
+                    </div>
+                    <h3 class="card-title">High Water Level Alert</h3>
+                    <p class="card-description">Sensor DS-001 detected water level above threshold at Main Street drainage point. Immediate attention required.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-check-circle" style="color: #10b981;"></i>
+                    </div>
+                    <h3 class="card-title">Maintenance Completed</h3>
+                    <p class="card-description">Scheduled maintenance for drainage pump DP-003 has been successfully completed. System is now operational.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-info-circle" style="color: #3b82f6;"></i>
+                    </div>
+                    <h3 class="card-title">Weather Update</h3>
+                    <p class="card-description">Heavy rainfall predicted for the next 24 hours. System automatically switched to high-capacity mode.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Maintenance Schedule Section -->
+        <section id="maintenance" class="section fade-in">
+            <div class="section-header">
+                <h1 class="section-title">Maintenance Schedule</h1>
+                <p class="section-subtitle">Keep your drainage system running optimally with scheduled maintenance and inspections.</p>
+            </div>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="card-title">Upcoming Maintenance</h3>
+                    <p class="card-description">
+                        <strong>Next Service:</strong> August 15, 2025<br>
+                        <strong>Location:</strong> Central Pump Station<br>
+                        <strong>Type:</strong> Routine Inspection & Cleaning
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3 class="card-title">Equipment Status</h3>
+                    <p class="card-description">
+                        <strong>Pumps:</strong> 8/10 Operational<br>
+                        <strong>Sensors:</strong> 24/25 Active<br>
+                        <strong>Filters:</strong> 6/8 Clean
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3 class="card-title">Maintenance History</h3>
+                    <p class="card-description">View detailed logs of all maintenance activities, repairs, and system upgrades performed in the last 12 months.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Climate Section -->
+        <section id="climate" class="section fade-in">
+            <div class="section-header">
+                <h1 class="section-title">Climate Monitoring</h1>
+                <p class="section-subtitle">Comprehensive weather analysis and flood risk assessment for proactive drainage management.</p>
+            </div>
+
+            <!-- Weather Forecast Subsection -->
+            <div id="weather" class="climate-subsection">
+                <h3>
+                    <i class="fas fa-sun"></i>
+                    Weather Forecast
+                </h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-thermometer-half"></i>
+                        </div>
+                        <h3 class="card-title">Current Conditions</h3>
+                        <p class="card-description">
+                            <strong>Temperature:</strong> 28°C<br>
+                            <strong>Humidity:</strong> 75%<br>
+                            <strong>Wind Speed:</strong> 12 km/h
+                        </p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-calendar-week"></i>
+                        </div>
+                        <h3 class="card-title">7-Day Forecast</h3>
+                        <p class="card-description">Partly cloudy with scattered showers expected mid-week. Temperature ranging from 24°C to 32°C.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rainfall Prediction Subsection -->
+            <div id="rainfall" class="climate-subsection">
+                <h3>
+                    <i class="fas fa-cloud-rain"></i>
+                    Rainfall Prediction
+                </h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3 class="card-title">24-Hour Prediction</h3>
+                        <p class="card-description">
+                            <strong>Expected Rainfall:</strong> 15-25mm<br>
+                            <strong>Peak Intensity:</strong> 2-4 PM<br>
+                            <strong>Confidence:</strong> 85%
+                        </p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-area"></i>
+                        </div>
+                        <h3 class="card-title">Precipitation Trends</h3>
+                        <p class="card-description">Historical data shows 20% increase in rainfall intensity compared to seasonal average. System capacity adjusted accordingly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flood Risk Assessment Subsection -->
+            <div id="flood-risk" class="climate-subsection">
+                <h3>
+                    <i class="fas fa-exclamation-triangle"></i>
+                    Flood Risk Assessment
+                </h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-shield-alt" style="color: #10b981;"></i>
+                        </div>
+                        <h3 class="card-title">Current Risk Level</h3>
+                        <p class="card-description">
+                            <strong>Status:</strong> Low Risk<br>
+                            <strong>Drainage Capacity:</strong> 65% Available<br>
+                            <strong>Next Assessment:</strong> 6 hours
+                        </p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3 class="card-title">Risk Zones</h3>
+                        <p class="card-description">3 areas identified as moderate risk zones. Enhanced monitoring active in downtown and industrial districts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Section -->
+        <section id="data" class="section fade-in">
+            <div class="section-header">
+                <h1 class="section-title">Recent Sensor Data</h1>
+                <p class="section-subtitle">Real-time data from your drainage network sensors and monitoring equipment.</p>
+            </div>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3 class="card-title">Water Level Sensors</h3>
+                    <p class="card-description">
+                        <strong>DS-001:</strong> 2.3m (Normal)<br>
+                        <strong>DS-002:</strong> 1.8m (Normal)<br>
+                        <strong>DS-003:</strong> 3.1m (High)<br>
+                        <strong>Last Update:</strong> 2 minutes ago
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3 class="card-title">Flow Rate Monitors</h3>
+                    <p class="card-description">
+                        <strong>Average Flow:</strong> 450 L/min<br>
+                        <strong>Peak Flow:</strong> 680 L/min<br>
+                        <strong>Efficiency:</strong> 92%<br>
+                        <strong>Status:</strong> Optimal
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="card-title">Data Analytics</h3>
+                    <p class="card-description">
+                        <strong>Data Points:</strong> 1.2M collected<br>
+                        <strong>Uptime:</strong> 99.7%<br>
+                        <strong>Storage:</strong> 78% capacity<br>
+                        <strong>Backup:</strong> Current
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

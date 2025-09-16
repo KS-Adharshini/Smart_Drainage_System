@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "name": "Admin User",
+    "email": "admin@drainage.com",
+    "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+    "role": "admin",
+    "createdAt": "2025-08-09T18:29:28.897Z"
+  },
+  {
+    "id": "2",
+    "name": "Operator User",
+    "email": "operator@drainage.com",
+    "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+    "role": "operator",
+    "createdAt": "2025-08-09T18:29:28.897Z"
+  },
+  {
+    "id": "3",
+    "name": "John Doe",
+    "email": "john@drainage.com",
+    "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+    "role": "user",
+    "createdAt": "2025-08-09T18:29:28.897Z"
+  },
+  {
+    "id": "1754764170068pkyszgw9o",
+    "name": "Adharshini KS",
+    "email": "sreeadhu05@gmail.com",
+    "password": "$2b$12$7SyPkMSRCiMmFAXrXed1KuydYW/Ce4ZfSMrgi36qqBaK0dB2fR15O",
+    "role": "user",
+    "createdAt": "2025-08-09T18:29:30.068Z"
+  },
+  {
+    "id": "1754926725532gdkfh23ve",
+    "name": "Kiran Karthek",
+    "email": "kirankartheks.23eee@kongu.edu",
+    "password": "$2b$12$nxCwMKTJYUJldT3ZwrTavu1g9sF04DCoPHZMKE8I8LssrpKxu9LvG",
+    "role": "user",
+    "createdAt": "2025-08-11T15:38:45.532Z"
+  },
+  {
+    "id": "1754931859639rhyqyvomg",
+    "name": "Kiran Karthek",
+    "email": "kirankarthek@gmail.com",
+    "password": "$2b$12$N9JvYByJ.MNUH0XfhMFcd.y.s941JErEtz4R1rnYF.02UFi.BmClC",
+    "role": "user",
+    "createdAt": "2025-08-11T17:04:19.639Z"
+  },
+  {
+    "id": "1754932248049q44o65mxf",
+    "name": "Adharshini KS",
+    "email": "adharshiniks.23aim@kongu.edu",
+    "password": "$2b$12$CEry7BwMZhqh05LQ5AG7m.hTN8LuRw6M0FCLSkX9NIax.ih34MqrS",
+    "role": "user",
+    "createdAt": "2025-08-11T17:10:48.049Z"
+  },
+  {
+    "id": "1754984969443bwki7peyb",
+    "name": "Kiruthik P",
+    "email": "kiruthik@gmail.com",
+    "password": "$2b$12$g5jp9qo056g1ugomNHxcFeQZf81AOJRpti4IONoaJR3gNaM0ezkmC",
+    "role": "user",
+    "createdAt": "2025-08-12T07:49:29.443Z"
+  },
+  {
+    "id": "1754986248369wi8t9rn6n",
+    "name": "Fazil",
+    "email": "fazil@gmail.com",
+    "password": "$2b$12$10WMkA1VbPzJvBt774HpHOep/Y1rzaMvAvOCZCM4z04ZyjanpCiTu",
+    "role": "user",
+    "createdAt": "2025-08-12T08:10:48.369Z"
+  },
+  {
+    "id": "1754988207301bwuwmvz08",
+    "name": "pk",
+    "email": "pk@gmail.com",
+    "password": "$2b$12$Nl6F8Ox5kWNE.rnhzAa5AuLxbxkrb/HUghciu1eOzVho4o68XqjmW",
+    "role": "user",
+    "createdAt": "2025-08-12T08:43:27.301Z"
+  },
+  {
+    "id": "1754989826154zntbjye38",
+    "name": "aasath",
+    "email": "aasath@gmail.com",
+    "password": "$2b$12$avs5rPgXWdKGmUzzam8ra.W60XRhj6xVuumn1BHdejH9MEawJz8Xe",
+    "role": "user",
+    "createdAt": "2025-08-12T09:10:26.154Z"
+  },
+  {
+    "id": "1755063777065apbuhzwsu",
+    "name": "Kiran Karthek",
+    "email": "kirankartheks@gmail.com",
+    "password": "$2b$12$d2B0JyxQoesUOxtC/oMrbuNeulgsXU1tsRCeny/AULbeumfSCIcSK",
+    "role": "user",
+    "createdAt": "2025-08-13T05:42:57.065Z"
+  }
+]
